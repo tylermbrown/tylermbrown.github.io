@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    background-color: tomato;
+    margin: 0;
+}
+
+.layout {
+    max-width: 1280px;
+    margin: auto;
+    display: grid;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.layout--space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.layout--hcentred {
+    display: flex;
+    justify-content: center;
+}
+
+.layout--vcentred {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    background-color: #fff;
+    height: 80px;
+    transition: height 0.3s ease;
+}
+
+header:hover {
+    height: 256px;
+}
+
+header .layout {
+    height: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: firebrick;
+    font-weight: 600;
+}
+
+.content {
+    height: calc(100vh - 80px);
+}
+
+.content .layout {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
